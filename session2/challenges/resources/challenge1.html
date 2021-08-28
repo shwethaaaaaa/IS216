@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Your Name Goes Here - Challenge 1</title>
+    <title>Shwetha- Challenge 1</title>
 
     <!-- Internal CSS styling -->
     <style>
@@ -12,6 +12,154 @@
         }
 
         /* Add your CSS script below */
+
+        body{
+            background-image: url(images/justin_bg.jpg);
+            background-attachment: fixed;
+            background-size: 1700px 1000px;
+          
+        }
+
+
+        .header-box{
+
+            width: 60%;
+            /*margin auot to centre the element*/
+            margin: auto;
+            font-family: sans-serif;
+            background-color: black;
+            color: white;
+            border-color: blue;
+            border-top-style: dotted;
+            border-bottom-style: dotted;
+            border-right-style: solid;
+            border-left-style: solid;
+            border-width: 4px;
+            padding: 20px;
+            margin-top: 20px
+
+            
+
+        }
+
+        .header-box h1{
+            text-decoration: underline;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            word-spacing: 35px;
+
+        }
+
+
+
+        .middle-box{
+            width: 60%;
+            /*margin auot to centre the element*/
+            margin: auto;
+            margin-top: 20px;
+            background-color:yellow;
+            color: black;
+            border: 8px dotted rgb(228, 41, 28);
+            padding: 20px;
+            font-family: sans-serif;
+            
+
+        }
+
+        .middle-box h1{
+            width: 50%;
+            margin: auto;
+            border: 3px dotted navy;
+            background-color: pink;
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            
+        }
+
+        .middle-box p{
+            word-spacing: 6px;
+        }
+
+        #justlink{
+            text-align: center;
+            background-color: aqua;
+            margin-top: 10px;
+            width: 100%;
+            height: 30px;
+            padding-top: 5px;
+        }
+
+
+        .bottom-box{
+            width: 60%;
+            height: 230px;
+            margin: auto;
+            font-family: sans-serif;
+            background-color: #9be230;
+            color: black;
+            border-radius: 30px;
+            border: 2px solid black;
+            padding: 10px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+
+
+        }
+
+        .bottom-box h2{
+            text-align: center;
+            font-size: 20px;
+        }
+
+        ul{
+            list-style-image: url(images/justin_list_button.png);
+            margin-left: 140px;
+
+
+        }
+
+        li{
+            border-bottom: 2px  dotted black;
+        }
+
+
+        .love-box{
+            width: 60%;
+            margin: auto;
+            border: 5px solid purple;
+            margin-bottom: 15px;
+            padding: 10px;
+            
+            
+        }
+
+
+        .love-box h2{
+            width: 90%;
+            margin: auto;
+            border: 3px dotted rgb(218, 44, 87);
+            background-color: rgb(230, 138, 153);
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            
+        }
+
+
+
+        /* MORE CSS TO WRITE FOR STYLING INPUTS AND OTHER FORM ELEMENTS  */
+
+
+        .footer-box{
+            width: 100%;
+            background-color: gray;
+            text-align:center;
+        }
+
+
+
 
     </style>
 </head>
@@ -40,7 +188,7 @@
                 Bieber was born on March 1, 1994, in London, Ontario, at St Joseph's Hospital, and was raised in Stratford, Ontario. He is the only child of Jeremy Jack Bieber and Pattie Mallette, who were never married. Mallette's mother Diane and stepfather Bruce helped her raise her son. Bieber's ancestry includes French-Canadian, Irish, English, Scottish, and German.
             </p>
 
-            <p>
+            <p id = 'justlink'>
                 For more information, visit <a href="https://en.wikipedia.org/wiki/Justin_Bieber" target="_blank">this Wiki page</a> and read!
             </p>
         </div>
@@ -50,7 +198,7 @@
             <ul>
                 <li>Talented</li>
                 <li>Handsome</li>
-                <li>He is single married</li>
+                <li>He is <p style = 'text-decoration: line-through; color:red; display: inline;'>single</p><p style = 'color: rgb(25, 25, 214); display: inline;'> married</p></li>
             </ul>
         </div>
 
@@ -85,7 +233,7 @@
     <!-- Footer -->
     <div class="footer-box">
         <p>
-            Copyright &copy; 2020 Your Name Goes Here
+            Copyright &copy; 2020 Ashok Kumar Shwetha
         </p>
     </div>
     
