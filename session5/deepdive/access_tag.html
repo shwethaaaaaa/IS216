@@ -38,9 +38,9 @@
 
         //======= Access all <h1> elements =======
         console.log("=============== <h1> ===============");
-        var nodes = document.getElementsByTagName("h1"); // collection of Element objects
+        var nodes = document.getElementsByTagName("h1"); // returns a COLLECTION of ElEMENT OBJECT
 
-        console.log(nodes);
+        console.log(nodes); // for debugging
 
         // nodes is a collection (of Element objects)
         for(node of nodes) {
@@ -48,8 +48,9 @@
             // node
             // innerHTML
             // innerText
+
             console.log("====================================");
-            console.log( node );
+            console.log( node ); // NODE is the element object!!
             console.log( node.innerHTML );
             console.log( node.innerText );
 

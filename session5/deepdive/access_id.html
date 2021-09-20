@@ -36,21 +36,22 @@
 
     <!-- My JavaScript code goes below -->
     <script>
-        var justin = document.getElementById("justin"); // Element object (if found)
+        var justin = document.getElementById("justin"); //  will return an element object (if found)
         var selena = document.getElementById("selena"); // Element object (if found)
         var demi = document.getElementById("demi"); // Element object (if found)
 
-        console.log(justin);
+        console.log(justin); // returns the element object
         console.log(selena);
         console.log(demi);
 
 
         // Justin
         console.log("##### Node's innerHTML #####");
-        console.log( justin.innerHTML );
+        console.log( justin.innerHTML ); // returns the text with all the whitespaces b4 and after as well!!
+        // INNERHTML PRESERVES BOTH THE WHITE SPACES AND INNER HTML!!
 
         console.log("##### Node's innerText #####");
-        console.log( justin.innerText );
+        console.log( justin.innerText ); // returns the text (doesnt care abt the whitespaces)
 
         // Selena
         console.log("##### Node's innerHTML #####");

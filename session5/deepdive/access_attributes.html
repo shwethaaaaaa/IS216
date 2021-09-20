@@ -46,6 +46,8 @@
     <!-- JavaScript below -->
     <script>
 
+        // note the function can be put below as well, call first and then define????
+
         function show_kim() {
             // Retrieve all elements with class 'hello'
             console.log("======== Retrieve an element with id 'kim' ========");
@@ -64,7 +66,7 @@
             console.log(node.innerText);
 
             console.log("##### Node's Attributes #####");
-            var attributes = node.getAttributeNames();
+            var attributes = node.getAttributeNames(); // 3rd one!!
             console.log(attributes);
         }
 
@@ -117,15 +119,19 @@
                 console.log(node.innerText);
 
                 console.log("##### Node's Attributes #####");
-                var attributes = node.getAttributeNames();
+                var attributes = node.getAttributeNames(); // returns an array if strings (which are the attributes) 
                 console.log(attributes);
 
                 console.log("##### Node's href attribute & its value #####");
                 var attribute_node = node.getAttributeNode("href"); // AttributeNode object
-                console.log(attribute_node); // object
+                console.log(attribute_node); // object (getAttrubuteNode returbs an AttrributeNode object)
                 console.log(attribute_node.value); // The link URL (value)
                 
+                
+                // ANOTHER WAY TO GET VALUE OF ATTRIBUTE IN SINGELINE
                 console.log( node.getAttribute("href") ); // value of attribute
+
+
             }
         }
 

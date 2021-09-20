@@ -18,6 +18,7 @@
 <body>
 
     <form name="some_form" id="love_form" action="#">
+
         <label>Fullname</label>
         <input type="text" name="fullname">
 
@@ -39,16 +40,18 @@
     <script>
 
         console.log("=========== Accessing Form - Method #1 ===========");
-        var some_form = document.forms["some_form"];
-        console.log(some_form);
+        var some_form = document.forms["some_form"]; // document.forms[name] // ACCESSING THRU NAME
+        console.log(some_form); // will return the same thing
 
         console.log("=========== Accessing Form - Method #2 ===========");
-        var love_form = document.getElementById("love_form");
-        console.log(love_form);
+        var love_form = document.getElementById("love_form"); // ACESSING THRU ID
+        console.log(love_form); // will return the same thing
 
         console.log("=========== What's inside the form? Element objects... ===========");
-        // form is a collection of Element objects
-        for(var i = 0; i < love_form.length; i++) {
+
+
+        // form is a COLLECTION of Element objects (LIKE A LIST)
+        for(var i = 0; i < love_form.length; i++) { //MUST USE THE ID HERE, NOT THE NAME (NOTEE)
             console.log( love_form[i] );
         }
 

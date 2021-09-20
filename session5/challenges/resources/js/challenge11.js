@@ -1,7 +1,9 @@
 //================================================
 // DO NOT MODIFY THIS CONSTANT VARIABLE
 //================================================
-const reviews = {
+
+
+const reviews = { // many dimensional array!//
     "High Line Place" :
     [
         "848 Washington Street at West 13th Street, New York City, NY 10014-1308, USA",
@@ -100,18 +102,31 @@ function display_reviews() {
     // e.g. What about the hotel's name?
     var hotel_button_div = document.getElementById('hotel_button_div');
     console.log(hotel_button_div);
+    
+
+    // THIS ONE U HARD CODED, BUT YEST U GENRALLY GET THE IDEA
     hotel_button_div.innerHTML = `
-            <button style="margin-bottom: 5px" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#hotel1">
-                Hotel name placeholder 1
+            <button style="margin-bottom: 10px" class="btn btn-primary w-75" type="button" data-toggle="collapse" data-target="#hotel1">
+                High Line Place
             </button>
 
-            <button style="margin-bottom: 5px" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#hotel2">
-                Hotel name placeholder 2
+            <button style="margin-bottom: 10px" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#hotel2">
+            YOTEL New York
+            </button>
+
+            <button style="margin-bottom: 10px" class="btn btn-primary w-75" type="button" data-toggle="collapse" data-target="#hotel2">
+                Hotel Edison
+            </button>
+
+            <button style="margin-bottom: 10px" class="btn btn-primary w-75" type="button" data-toggle="collapse" data-target="#hotel2">
+                Arlo SoHo
             </button>
     `;
 
 
-    // [IMPORTANT]
+    // [IMPORTANT] (we gotta loop thru the constant array here right???) (THIS IS THE MAIN IDEA??)
+
+
     // This code populates Populate 'hotel_info_div' section of HTML.
     // 
     // Below, as an example, we populate information about 2 hotels.
@@ -183,6 +198,8 @@ function display_reviews() {
                 </div> <!-- End of Card Body -->
             </div> <!-- End of Collapse -->
 
+
+
             <!-- Hotel 2 -->
             <div class="collapse" id="hotel2" aria-labelledby="hotel2">
                 <div class="card card-body">
@@ -190,5 +207,9 @@ function display_reviews() {
                 </div>
             </div>
     `;
+
+
+
+
 
 }

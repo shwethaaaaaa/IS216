@@ -22,10 +22,14 @@
             var nodes = document.getElementsByTagName("h1");
 
             for(node of nodes) {
-                console.log(node.innerText);
-                alert(node.innerText);
+                console.log(node.innerText); // at the console
+                alert(node.innerText); // as an alert
             }
         }
+
+
+        // notes 
+        // its known to put js just b4 the closing body tag
 
     </script>
 
@@ -39,20 +43,28 @@
     <h1>Hello World!!!</h1>
     <h1>Save the World!!!</h1>
 
-    <!-- Add an event to this button -->
+    <!-- Add an on-click event to this html button -->
     <button onClick="alert('Hi there!')">
         Say Hi
     </button>
 
     <br><br>
-    <button onClick="hi()">
-        Say Hi Again
+    <button onClick="hi()"> 
+        <!-- or we can do onClick = 'alert(Hi there!); alert ('Hello there'); var x = 7; alert (x), CAN DO THIS AS WELL!!  or can put
+        as a FUNCTION AS WELL-->
+        Say Hi Again 
+        <!-- this is to be shown on the button -->
     </button>
 
     <br><br>
-    <button onClick="click_h1()">
+    <button onClick="click_h1()"> 
+        <!-- NOTE ALL OF THIS MUST BE IN A STRING FOR ONCLICK -->
         Click to see all h1
     </button>
+
+    <!-- if ur js references can wait, its best to put it here at the end, so that the user sees some content and doesnt wait for a 
+    long time seeing a blank screen!! But this does not apply to all scenarios!! if your webpage loading needs the external JS code (eg if u 
+    are using from bootstrap, then u need to put it in the head section b4 the HTML CONTENT) -->
 
 </body>
 </html>
