@@ -34,8 +34,16 @@
         // - 1 row for 1 cast member
         // HINT: You need to APPEND additional HTML to table_data
         
-        // WRITE YOUR CODE HERE
+        // WRITE YOUR CODE HERE (GET THE MAIN CONCEPT HERE!!)
 
+        for (friend of friends){ // friend is a list
+            table_data += '<tr>'
+                for (info of friend){
+                    table_data += '<td>' + info+ '</td>'
+                }
+            table_data += '</tr>' // before moving on to the next one
+
+        }
 
 
         // Once table_data is completed

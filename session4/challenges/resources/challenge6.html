@@ -30,6 +30,43 @@
 
         // WRITE YOUR CODE HERE
 
+        var input = prompt('Please enter an integer between 1 & 10 (inclusive')
+
+         //CONDITIONS
+
+         if (input == ''){
+             alert('Heelo Hello Invalid Input!')
+             
+         }
+
+         else if (isNaN(input)){
+            alert('Heelo Hello Invalid Input!')
+         }
+
+         else if (!(Number.isInteger(Number(input)))){
+            alert('Heelo Hello Invalid Input!')
+         }
+
+
+         else if ((Number(input) < 1) || (Number(input) > 10)){
+            alert('Heelo Hello Invalid Input!')
+         }
+
+
+         else{
+             input = Number(input)
+              var rand_number = Math.floor(Math.random(1,11)*10) // TO GENERATE A INTEGER BTW 1 TO 10
+              if (input == rand_number){
+                  alert("Bingo! Lucky number is " + rand_number + '! Have a nice day!')
+              }
+
+              else{
+                alert('Lucky number is ' + rand_number+ ' Ouch... try again next time')
+
+              }
+
+         }
+
     </script>
 
 </head>

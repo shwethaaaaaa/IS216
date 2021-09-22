@@ -20,6 +20,24 @@
         function convert_first_letter(str) {
             
             // YOUR CODE GOES HERE
+
+            
+
+        
+        var arr = str.split(" ");   // CONVERT STRING TO ARRAY!
+
+        var new_str = ''
+        for (word of arr){
+             new_str += word[0].toUpperCase()
+
+            for (i=1; i < word.length; i++){
+                new_str+= word[i]
+            }
+            new_str += ' '
+        }
+
+        return new_str
+
             
         }
 
